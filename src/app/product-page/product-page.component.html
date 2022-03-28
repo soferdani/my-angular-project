@@ -1,0 +1,12 @@
+<h1>{{ product?.name }}</h1>
+<img [src]="imageUrl" />
+<p>Price: {{ product?.price }}</p>
+<button
+  class="snipcart-add-item"
+  [attr.data-item-id]="product?.id"
+  [attr.data-item-price]="product?.price"
+  [attr.data-item-url]="'product/' + product?.id"
+  [attr.data-item-image]="imageUrl"
+  [attr.data-item-name]="product?.name">
+  Add to cart
+  </button>
